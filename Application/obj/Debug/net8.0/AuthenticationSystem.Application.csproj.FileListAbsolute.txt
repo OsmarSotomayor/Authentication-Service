@@ -1,0 +1,12 @@
+C:\Users\Oscar Omar\source\repos\AuthenticationSystem\Application\bin\Debug\net8.0\AuthenticationSystem.Application.deps.json
+C:\Users\Oscar Omar\source\repos\AuthenticationSystem\Application\bin\Debug\net8.0\AuthenticationSystem.Application.dll
+C:\Users\Oscar Omar\source\repos\AuthenticationSystem\Application\bin\Debug\net8.0\AuthenticationSystem.Application.pdb
+C:\Users\Oscar Omar\source\repos\AuthenticationSystem\Application\obj\Debug\net8.0\AuthenticationSystem.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Oscar Omar\source\repos\AuthenticationSystem\Application\obj\Debug\net8.0\AuthenticationSystem.Application.AssemblyInfoInputs.cache
+C:\Users\Oscar Omar\source\repos\AuthenticationSystem\Application\obj\Debug\net8.0\AuthenticationSystem.Application.AssemblyInfo.cs
+C:\Users\Oscar Omar\source\repos\AuthenticationSystem\Application\obj\Debug\net8.0\AuthenticationSystem.Application.csproj.CoreCompileInputs.cache
+C:\Users\Oscar Omar\source\repos\AuthenticationSystem\Application\obj\Debug\net8.0\AuthenticationSystem.Application.sourcelink.json
+C:\Users\Oscar Omar\source\repos\AuthenticationSystem\Application\obj\Debug\net8.0\AuthenticationSystem.Application.dll
+C:\Users\Oscar Omar\source\repos\AuthenticationSystem\Application\obj\Debug\net8.0\refint\AuthenticationSystem.Application.dll
+C:\Users\Oscar Omar\source\repos\AuthenticationSystem\Application\obj\Debug\net8.0\AuthenticationSystem.Application.pdb
+C:\Users\Oscar Omar\source\repos\AuthenticationSystem\Application\obj\Debug\net8.0\ref\AuthenticationSystem.Application.dll
