@@ -18,7 +18,17 @@ namespace Infrastructure.Repositories
             this._context = context;
         }
 
-        public void CreateUser(User user) => this.Create(user);
+        public async Task CreateUser(User user)
+        {
+            this.Create(user);
+            await _context.SaveChangesAsync();
+        }
+
+        public async Task UpdateAsync(User user)
+        {
+            this.Update(user);
+            await _context.SaveChangesAsync();
+        }
         public async Task AddLoginAttemptAsync(LoginAttempt attempt)
         {
             await _context.LoginAttempts.AddAsync(attempt);

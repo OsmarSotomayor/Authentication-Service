@@ -3,48 +3,64 @@
   "WorkspaceRootPath": "C:\\Users\\Oscar Omar\\source\\repos\\AuthenticationSystem\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{68C50E6B-E8B6-466B-B37C-30E6D2401B9D}|Infrastructure\\Infrastructure.csproj|c:\\users\\oscar omar\\source\\repos\\authenticationsystem\\infrastructure\\migrations\\20250711235217_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{68C50E6B-E8B6-466B-B37C-30E6D2401B9D}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\migrations\\20250711235217_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{1E53FD89-C1B6-4C42-B97D-E6D8B0CB3E36}|AuthenticationSystem\\AuthenticationSystem.csproj|c:\\users\\oscar omar\\source\\repos\\authenticationsystem\\authenticationsystem\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{1E53FD89-C1B6-4C42-B97D-E6D8B0CB3E36}|AuthenticationSystem\\AuthenticationSystem.csproj|solutionrelative:authenticationsystem\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{68C50E6B-E8B6-466B-B37C-30E6D2401B9D}|Infrastructure\\Infrastructure.csproj|c:\\users\\oscar omar\\source\\repos\\authenticationsystem\\infrastructure\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{68C50E6B-E8B6-466B-B37C-30E6D2401B9D}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2B534DE2-46F6-405E-8BB4-7547789BDFEA}|Application\\AuthenticationSystem.Application.csproj|c:\\users\\oscar omar\\source\\repos\\authenticationsystem\\application\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B534DE2-46F6-405E-8BB4-7547789BDFEA}|Application\\AuthenticationSystem.Application.csproj|solutionrelative:application\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{68C50E6B-E8B6-466B-B37C-30E6D2401B9D}|Infrastructure\\Infrastructure.csproj|c:\\users\\oscar omar\\source\\repos\\authenticationsystem\\infrastructure\\repositories\\repositorybase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{68C50E6B-E8B6-466B-B37C-30E6D2401B9D}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\repositories\\repositorybase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1EA40EA1-1A9D-44EC-A7A0-1DEABB87A08D}|Domain\\Domain.csproj|c:\\users\\oscar omar\\source\\repos\\authenticationsystem\\domain\\interfaces\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1EA40EA1-1A9D-44EC-A7A0-1DEABB87A08D}|Domain\\Domain.csproj|solutionrelative:domain\\interfaces\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1EA40EA1-1A9D-44EC-A7A0-1DEABB87A08D}|Domain\\Domain.csproj|c:\\users\\oscar omar\\source\\repos\\authenticationsystem\\domain\\interfaces\\irepositorybase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1EA40EA1-1A9D-44EC-A7A0-1DEABB87A08D}|Domain\\Domain.csproj|solutionrelative:domain\\interfaces\\irepositorybase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1EA40EA1-1A9D-44EC-A7A0-1DEABB87A08D}|Domain\\Domain.csproj|c:\\users\\oscar omar\\source\\repos\\authenticationsystem\\domain\\enums\\loginresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1EA40EA1-1A9D-44EC-A7A0-1DEABB87A08D}|Domain\\Domain.csproj|solutionrelative:domain\\enums\\loginresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1EA40EA1-1A9D-44EC-A7A0-1DEABB87A08D}|Domain\\Domain.csproj|c:\\users\\oscar omar\\source\\repos\\authenticationsystem\\domain\\models\\loginattempt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1EA40EA1-1A9D-44EC-A7A0-1DEABB87A08D}|Domain\\Domain.csproj|solutionrelative:domain\\models\\loginattempt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1EA40EA1-1A9D-44EC-A7A0-1DEABB87A08D}|Domain\\Domain.csproj|c:\\users\\oscar omar\\source\\repos\\authenticationsystem\\domain\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1EA40EA1-1A9D-44EC-A7A0-1DEABB87A08D}|Domain\\Domain.csproj|solutionrelative:domain\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2B534DE2-46F6-405E-8BB4-7547789BDFEA}|Application\\AuthenticationSystem.Application.csproj|c:\\users\\oscar omar\\source\\repos\\authenticationsystem\\application\\interfaces\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B534DE2-46F6-405E-8BB4-7547789BDFEA}|Application\\AuthenticationSystem.Application.csproj|solutionrelative:application\\interfaces\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1E53FD89-C1B6-4C42-B97D-E6D8B0CB3E36}|AuthenticationSystem\\AuthenticationSystem.csproj|c:\\users\\oscar omar\\source\\repos\\authenticationsystem\\authenticationsystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1E53FD89-C1B6-4C42-B97D-E6D8B0CB3E36}|AuthenticationSystem\\AuthenticationSystem.csproj|solutionrelative:authenticationsystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{2B534DE2-46F6-405E-8BB4-7547789BDFEA}|Application\\AuthenticationSystem.Application.csproj|c:\\users\\oscar omar\\source\\repos\\authenticationsystem\\application\\dtos\\loginrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B534DE2-46F6-405E-8BB4-7547789BDFEA}|Application\\AuthenticationSystem.Application.csproj|solutionrelative:application\\dtos\\loginrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1EA40EA1-1A9D-44EC-A7A0-1DEABB87A08D}|Domain\\Domain.csproj|c:\\users\\oscar omar\\source\\repos\\authenticationsystem\\domain\\interfaces\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1EA40EA1-1A9D-44EC-A7A0-1DEABB87A08D}|Domain\\Domain.csproj|solutionrelative:domain\\interfaces\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{68C50E6B-E8B6-466B-B37C-30E6D2401B9D}|Infrastructure\\Infrastructure.csproj|c:\\users\\oscar omar\\source\\repos\\authenticationsystem\\infrastructure\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{68C50E6B-E8B6-466B-B37C-30E6D2401B9D}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1EA40EA1-1A9D-44EC-A7A0-1DEABB87A08D}|Domain\\Domain.csproj|c:\\users\\oscar omar\\source\\repos\\authenticationsystem\\domain\\interfaces\\irepositorybase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1EA40EA1-1A9D-44EC-A7A0-1DEABB87A08D}|Domain\\Domain.csproj|solutionrelative:domain\\interfaces\\irepositorybase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1EA40EA1-1A9D-44EC-A7A0-1DEABB87A08D}|Domain\\Domain.csproj|c:\\users\\oscar omar\\source\\repos\\authenticationsystem\\domain\\models\\loginattempt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1EA40EA1-1A9D-44EC-A7A0-1DEABB87A08D}|Domain\\Domain.csproj|solutionrelative:domain\\models\\loginattempt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1EA40EA1-1A9D-44EC-A7A0-1DEABB87A08D}|Domain\\Domain.csproj|c:\\users\\oscar omar\\source\\repos\\authenticationsystem\\domain\\enums\\loginresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1EA40EA1-1A9D-44EC-A7A0-1DEABB87A08D}|Domain\\Domain.csproj|solutionrelative:domain\\enums\\loginresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B534DE2-46F6-405E-8BB4-7547789BDFEA}|Application\\AuthenticationSystem.Application.csproj|c:\\users\\oscar omar\\source\\repos\\authenticationsystem\\application\\dtos\\loginresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B534DE2-46F6-405E-8BB4-7547789BDFEA}|Application\\AuthenticationSystem.Application.csproj|solutionrelative:application\\dtos\\loginresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B534DE2-46F6-405E-8BB4-7547789BDFEA}|Application\\AuthenticationSystem.Application.csproj|c:\\users\\oscar omar\\source\\repos\\authenticationsystem\\application\\dtos\\registeruserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B534DE2-46F6-405E-8BB4-7547789BDFEA}|Application\\AuthenticationSystem.Application.csproj|solutionrelative:application\\dtos\\registeruserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{68C50E6B-E8B6-466B-B37C-30E6D2401B9D}|Infrastructure\\Infrastructure.csproj|c:\\users\\oscar omar\\source\\repos\\authenticationsystem\\infrastructure\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{68C50E6B-E8B6-466B-B37C-30E6D2401B9D}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{68C50E6B-E8B6-466B-B37C-30E6D2401B9D}|Infrastructure\\Infrastructure.csproj|c:\\users\\oscar omar\\source\\repos\\authenticationsystem\\infrastructure\\migrations\\20250711235217_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{68C50E6B-E8B6-466B-B37C-30E6D2401B9D}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\migrations\\20250711235217_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1EA40EA1-1A9D-44EC-A7A0-1DEABB87A08D}|Domain\\Domain.csproj|c:\\users\\oscar omar\\source\\repos\\authenticationsystem\\domain\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1EA40EA1-1A9D-44EC-A7A0-1DEABB87A08D}|Domain\\Domain.csproj|solutionrelative:domain\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -54,11 +70,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 14,
               "Title": "User.cs",
               "DocumentMoniker": "C:\\Users\\Oscar Omar\\source\\repos\\AuthenticationSystem\\Domain\\Models\\User.cs",
               "RelativeDocumentMoniker": "Domain\\Models\\User.cs",
@@ -67,12 +83,11 @@
               "ViewState": "AgIAAAMAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-11T20:57:09.235Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "LoginAttempt.cs",
               "DocumentMoniker": "C:\\Users\\Oscar Omar\\source\\repos\\AuthenticationSystem\\Domain\\Models\\LoginAttempt.cs",
               "RelativeDocumentMoniker": "Domain\\Models\\LoginAttempt.cs",
@@ -86,7 +101,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "LoginResult.cs",
               "DocumentMoniker": "C:\\Users\\Oscar Omar\\source\\repos\\AuthenticationSystem\\Domain\\Enums\\LoginResult.cs",
               "RelativeDocumentMoniker": "Domain\\Enums\\LoginResult.cs",
@@ -100,7 +115,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "IRepositoryBase.cs",
               "DocumentMoniker": "C:\\Users\\Oscar Omar\\source\\repos\\AuthenticationSystem\\Domain\\Interfaces\\IRepositoryBase.cs",
               "RelativeDocumentMoniker": "Domain\\Interfaces\\IRepositoryBase.cs",
@@ -114,13 +129,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "IUserRepository.cs",
               "DocumentMoniker": "C:\\Users\\Oscar Omar\\source\\repos\\AuthenticationSystem\\Domain\\Interfaces\\IUserRepository.cs",
               "RelativeDocumentMoniker": "Domain\\Interfaces\\IUserRepository.cs",
               "ToolTip": "C:\\Users\\Oscar Omar\\source\\repos\\AuthenticationSystem\\Domain\\Interfaces\\IUserRepository.cs",
               "RelativeToolTip": "Domain\\Interfaces\\IUserRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwA8AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwA4AAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-11T21:30:47.979Z",
               "IsPinned": true,
@@ -128,27 +143,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "RepositoryBase.cs",
-              "DocumentMoniker": "C:\\Users\\Oscar Omar\\source\\repos\\AuthenticationSystem\\Infrastructure\\Repositories\\RepositoryBase.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\Repositories\\RepositoryBase.cs",
-              "ToolTip": "C:\\Users\\Oscar Omar\\source\\repos\\AuthenticationSystem\\Infrastructure\\Repositories\\RepositoryBase.cs",
-              "RelativeToolTip": "Infrastructure\\Repositories\\RepositoryBase.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAYwCAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-11T21:36:07.466Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 12,
               "Title": "AppDbContext.cs",
               "DocumentMoniker": "C:\\Users\\Oscar Omar\\source\\repos\\AuthenticationSystem\\Infrastructure\\AppDbContext.cs",
               "RelativeDocumentMoniker": "Infrastructure\\AppDbContext.cs",
               "ToolTip": "C:\\Users\\Oscar Omar\\source\\repos\\AuthenticationSystem\\Infrastructure\\AppDbContext.cs",
               "RelativeToolTip": "Infrastructure\\AppDbContext.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAAAowDUAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABAAAAAAAAAAAAAQwDUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-11T21:42:10.269Z",
               "IsPinned": true,
@@ -156,29 +157,98 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "LoginResponseDto.cs",
+              "DocumentMoniker": "C:\\Users\\Oscar Omar\\source\\repos\\AuthenticationSystem\\Application\\Dtos\\LoginResponseDto.cs",
+              "RelativeDocumentMoniker": "Application\\Dtos\\LoginResponseDto.cs",
+              "ToolTip": "C:\\Users\\Oscar Omar\\source\\repos\\AuthenticationSystem\\Application\\Dtos\\LoginResponseDto.cs",
+              "RelativeToolTip": "Application\\Dtos\\LoginResponseDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-12T02:22:38.372Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IAuthService.cs",
+              "DocumentMoniker": "C:\\Users\\Oscar Omar\\source\\repos\\AuthenticationSystem\\Application\\Interfaces\\IAuthService.cs",
+              "RelativeDocumentMoniker": "Application\\Interfaces\\IAuthService.cs",
+              "ToolTip": "C:\\Users\\Oscar Omar\\source\\repos\\AuthenticationSystem\\Application\\Interfaces\\IAuthService.cs",
+              "RelativeToolTip": "Application\\Interfaces\\IAuthService.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwBMAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-12T02:26:41.908Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Oscar Omar\\source\\repos\\AuthenticationSystem\\Infrastructure\\Repositories\\UserRepository.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Repositories\\UserRepository.cs",
+              "ToolTip": "C:\\Users\\Oscar Omar\\source\\repos\\AuthenticationSystem\\Infrastructure\\Repositories\\UserRepository.cs",
+              "RelativeToolTip": "Infrastructure\\Repositories\\UserRepository.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABoAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-11T22:48:25.794Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\Oscar Omar\\source\\repos\\AuthenticationSystem\\AuthenticationSystem\\appsettings.json",
-              "RelativeDocumentMoniker": "AuthenticationSystem\\appsettings.json",
-              "ToolTip": "C:\\Users\\Oscar Omar\\source\\repos\\AuthenticationSystem\\AuthenticationSystem\\appsettings.json",
-              "RelativeToolTip": "AuthenticationSystem\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-07-11T23:05:29.212Z",
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "C:\\Users\\Oscar Omar\\source\\repos\\AuthenticationSystem\\Application\\Services\\AuthService.cs",
+              "RelativeDocumentMoniker": "Application\\Services\\AuthService.cs",
+              "ToolTip": "C:\\Users\\Oscar Omar\\source\\repos\\AuthenticationSystem\\Application\\Services\\AuthService.cs",
+              "RelativeToolTip": "Application\\Services\\AuthService.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAADgvxEAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-12T02:29:40.713Z",
               "IsPinned": true,
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "20250711235217_InitialCreate.cs",
-              "DocumentMoniker": "C:\\Users\\Oscar Omar\\source\\repos\\AuthenticationSystem\\Infrastructure\\Migrations\\20250711235217_InitialCreate.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\Migrations\\20250711235217_InitialCreate.cs",
-              "ToolTip": "C:\\Users\\Oscar Omar\\source\\repos\\AuthenticationSystem\\Infrastructure\\Migrations\\20250711235217_InitialCreate.cs",
-              "RelativeToolTip": "Infrastructure\\Migrations\\20250711235217_InitialCreate.cs",
-              "ViewState": "AgIAADEAAAAAAAAAAAAQwDwAAAAuAAAAAAAAAA==",
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Oscar Omar\\source\\repos\\AuthenticationSystem\\AuthenticationSystem\\appsettings.json",
+              "RelativeDocumentMoniker": "AuthenticationSystem\\appsettings.json",
+              "ToolTip": "C:\\Users\\Oscar Omar\\source\\repos\\AuthenticationSystem\\AuthenticationSystem\\appsettings.json",
+              "RelativeToolTip": "AuthenticationSystem\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-07-12T03:11:16.857Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "LoginRequestDto.cs",
+              "DocumentMoniker": "C:\\Users\\Oscar Omar\\source\\repos\\AuthenticationSystem\\Application\\Dtos\\LoginRequestDto.cs",
+              "RelativeDocumentMoniker": "Application\\Dtos\\LoginRequestDto.cs",
+              "ToolTip": "C:\\Users\\Oscar Omar\\source\\repos\\AuthenticationSystem\\Application\\Dtos\\LoginRequestDto.cs",
+              "RelativeToolTip": "Application\\Dtos\\LoginRequestDto.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-12T01:49:25.379Z",
+              "WhenOpened": "2025-07-12T02:21:52.818Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "RegisterUserDto.cs",
+              "DocumentMoniker": "C:\\Users\\Oscar Omar\\source\\repos\\AuthenticationSystem\\Application\\Dtos\\RegisterUserDto.cs",
+              "RelativeDocumentMoniker": "Application\\Dtos\\RegisterUserDto.cs",
+              "ToolTip": "C:\\Users\\Oscar Omar\\source\\repos\\AuthenticationSystem\\Application\\Dtos\\RegisterUserDto.cs",
+              "RelativeToolTip": "Application\\Dtos\\RegisterUserDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-12T02:21:22.979Z",
               "EditorCaption": ""
             },
             {
@@ -243,28 +313,29 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 13,
+              "Title": "20250711235217_InitialCreate.cs",
+              "DocumentMoniker": "C:\\Users\\Oscar Omar\\source\\repos\\AuthenticationSystem\\Infrastructure\\Migrations\\20250711235217_InitialCreate.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Migrations\\20250711235217_InitialCreate.cs",
+              "ToolTip": "C:\\Users\\Oscar Omar\\source\\repos\\AuthenticationSystem\\Infrastructure\\Migrations\\20250711235217_InitialCreate.cs",
+              "RelativeToolTip": "Infrastructure\\Migrations\\20250711235217_InitialCreate.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAQwDwAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-12T01:49:25.379Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Oscar Omar\\source\\repos\\AuthenticationSystem\\AuthenticationSystem\\Program.cs",
               "RelativeDocumentMoniker": "AuthenticationSystem\\Program.cs",
               "ToolTip": "C:\\Users\\Oscar Omar\\source\\repos\\AuthenticationSystem\\AuthenticationSystem\\Program.cs",
               "RelativeToolTip": "AuthenticationSystem\\Program.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABoAAAAAAAAAAAAAABkAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-11T22:50:06.38Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "UserRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Oscar Omar\\source\\repos\\AuthenticationSystem\\Infrastructure\\Repositories\\UserRepository.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\Repositories\\UserRepository.cs",
-              "ToolTip": "C:\\Users\\Oscar Omar\\source\\repos\\AuthenticationSystem\\Infrastructure\\Repositories\\UserRepository.cs",
-              "RelativeToolTip": "Infrastructure\\Repositories\\UserRepository.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAswBQAAAA/AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-11T22:48:25.794Z"
             }
           ]
         },
