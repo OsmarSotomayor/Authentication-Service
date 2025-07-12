@@ -22,5 +22,7 @@ namespace AuthenticationSystem.Application.Interfaces
         /// <param name="dto"></param>
         /// <returns></returns>
         Task<LoginResponseDto> LoginAsync(LoginRequestDto dto);
+
+        Task<LoginResponseDto> RefreshTokenAsync(RefreshTokenRequestDto dto);
     }
 }

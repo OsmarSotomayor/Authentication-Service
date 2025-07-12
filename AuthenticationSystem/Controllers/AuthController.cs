@@ -53,5 +53,24 @@ namespace AuthenticationSystem.Controllers
                 return Unauthorized(new { error = ex.Message });
             }
         }
+
+        /// <summary>
+        /// Refresh token 
+        /// </summary>
+        /// <param name="dto">Dto with the param </param>
+        /// <returns></returns>
+        [HttpPost("refresh")]
+        public async Task<IActionResult> Refresh([FromBody] RefreshTokenRequestDto dto)
+        {
+            try
+            {
+                var result = await _authService.RefreshTokenAsync(dto);
+                return Ok(result);
+            }
+            catch (Exception ex)
+            {
+                return Unauthorized(new { error = ex.Message });
+            }
+        }
     }
 }

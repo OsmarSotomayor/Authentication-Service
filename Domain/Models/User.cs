@@ -15,6 +15,8 @@ namespace Domain.Models
         public bool IsLocked { get; set; } = false;
         public int FailedLoginAttempts { get; set; } = 0;
         public DateTime? LastLoginAt { get; set; }
+        public string? RefreshToken { get; set; }
+        public DateTime? RefreshTokenExpiryTime { get; set; }
 
         //Relacion 1 a muchos
         public ICollection<LoginAttempt> LoginAttempts { get; set; } = new List<LoginAttempt>();

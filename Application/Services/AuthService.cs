@@ -30,7 +30,7 @@ namespace AuthenticationSystem.Application.Services
         {
             var userExist = await _userRepository.GetByUsernameAsync(dto.Username, false);
             if (userExist != null)
-                throw new Exception("El usuario ya existe");
+                throw new Exception("User already exist");
 
             var user = new User
             {
@@ -46,13 +46,12 @@ namespace AuthenticationSystem.Application.Services
             var user = await _userRepository.GetByUsernameAsync(dto.Username, false);
 
             if (user == null)
-                throw new Exception("Usuario no válido.");
+                throw new Exception("Not valid user");
 
             if (user.IsLocked)
-                throw new Exception("Cuenta bloqueada por múltiples intentos fallidos.");
+                throw new Exception("Cuenta bloqueada por múltiples intentos fallidos");
 
             var result = _passwordHasher.VerifyHashedPassword(user, user.PasswordHash, dto.Password);
-
             var isSuccess = result == PasswordVerificationResult.Success;
 
             await _userRepository.AddLoginAttemptAsync(new LoginAttempt
@@ -68,10 +67,10 @@ namespace AuthenticationSystem.Application.Services
                     user.IsLocked = true;
 
                 await _userRepository.UpdateAsync(user);
-                throw new Exception("Credenciales inválidas.");
+                throw new Exception("Invalid credentials");
             }
 
-            // Reset attempts
+            //reset intents
             user.FailedLoginAttempts = 0;
             user.LastLoginAt = DateTime.UtcNow;
             await _userRepository.UpdateAsync(user);
@@ -100,11 +99,41 @@ namespace AuthenticationSystem.Application.Services
                 signingCredentials: creds
             );
 
+
             return new LoginResponseDto
             {
                 Token = new JwtSecurityTokenHandler().WriteToken(token),
                 ExpiresAt = expires
             };
         }
+
+        public async Task<LoginResponseDto> RefreshTokenAsync(RefreshTokenRequestDto dto)
+        {
+            var user = await _userRepository.GetByUsernameAsync(dto.Username, false);
+
+            if (user == null ||
+                user.RefreshToken != dto.RefreshToken ||
+                user.RefreshTokenExpiryTime <= DateTime.UtcNow)
+            {
+                throw new Exception("Invalid tokens or expired");
+            }
+
+            var newAccessToken = GenerateJwtToken(user);
+            var newRefreshToken = Guid.NewGuid().ToString();
+
+            user.RefreshToken = newRefreshToken;
+            user.RefreshTokenExpiryTime = DateTime.UtcNow.AddDays(7);
+
+            await _userRepository.UpdateAsync(user);
+
+            return new LoginResponseDto
+            {
+                Token = newAccessToken.Token,
+                ExpiresAt = newAccessToken.ExpiresAt,
+                RefreshToken = newRefreshToken
+            };
+        }
+
+
     }
 }
