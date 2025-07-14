@@ -4,7 +4,7 @@ Este microservicio fue desarrollado como parte de una prueba técnica para la po
 
 ---
 
-## 🧱 Tecnologías utilizadas
+##  Tecnologías utilizadas
 
 - ASP.NET Core 8
 - Entity Framework Core
