@@ -27,3 +27,26 @@ Infrastructure: Persistencia de datos
 API: Controladores y configuración web
 Se aplicó el patrón Repository 
 
+## Endpoints principales
+Método	Ruta	Descripción	Autenticación
+POST	/auth/register	Registrar nuevo usuario	Pública
+POST	/auth/login	Iniciar sesión y obtener JWT + RefreshToken	 Pública
+POST	/auth/refresh	Renovar el JWT usando un refresh token	 Pública
+POST	/auth/logout	Cerrar sesión e invalidar el token actual	 Requiere JWT
+
+## Flujo de autenticación con Refresh Token
+El usuario se registra o inicia sesión
+La API responde con un accessToken y un refreshToken
+El frontend usa el access token hasta que expire (1h)
+Cuando expira, envía el refresh token a /auth/refresh
+La API valida el refresh token y responde con un nuevo access token
+En logout, el access token se invalida (blacklist)
+
+## Pruebas unitarias
+Cobertura actual:
+
+Registro de usuario
+Login exitoso y fallido
+Control de intentos fallidos y bloqueo
+Logout y token en blacklist
+
