@@ -2,6 +2,7 @@
 using AuthenticationSystem.Application.Interfaces;
 using Domain.Interfaces;
 using Domain.Models;
+using Infrastructure.Repositories;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
@@ -19,12 +20,14 @@ namespace AuthenticationSystem.Application.Services
     {
         private readonly IUserRepository _userRepository;
         private readonly IConfiguration _configuration;
+        private readonly IBlacklistRepository _blacklistRepository;
         private readonly PasswordHasher<User> _passwordHasher = new();
 
-        public AuthService(IUserRepository userRepository, IConfiguration configuration)
+        public AuthService(IUserRepository userRepository, IConfiguration configuration, IBlacklistRepository _blacklistRepository)
         {
             this._userRepository = userRepository;
             this._configuration = configuration;
+            this._blacklistRepository = _blacklistRepository;
         }
         public async Task RegisterAsync(RegisterUserDto dto)
         {
@@ -43,21 +46,23 @@ namespace AuthenticationSystem.Application.Services
 
         public async Task<LoginResponseDto> LoginAsync(LoginRequestDto dto)
         {
-            var user = await _userRepository.GetByUsernameAsync(dto.Username, false);
+            var user = await _userRepository.GetByUsernameAsync(dto.Username,false);
 
             if (user == null)
-                throw new Exception("Not valid user");
+                throw new Exception("Usuario no válido.");
 
             if (user.IsLocked)
-                throw new Exception("Cuenta bloqueada por múltiples intentos fallidos");
+                throw new Exception("Cuenta bloqueada por múltiples intentos fallidos.");
 
             var result = _passwordHasher.VerifyHashedPassword(user, user.PasswordHash, dto.Password);
             var isSuccess = result == PasswordVerificationResult.Success;
 
+            // Guardar intento de login
             await _userRepository.AddLoginAttemptAsync(new LoginAttempt
             {
                 UserId = user.Id,
-                IsSuccess = isSuccess
+                IsSuccess = isSuccess,
+                AttemptedAt = DateTime.UtcNow
             });
 
             if (!isSuccess)
@@ -67,17 +72,29 @@ namespace AuthenticationSystem.Application.Services
                     user.IsLocked = true;
 
                 await _userRepository.UpdateAsync(user);
-                throw new Exception("Invalid credentials");
+                throw new Exception("Credenciales inválidas.");
             }
 
-            //reset intents
+            // Resetear intentos
             user.FailedLoginAttempts = 0;
             user.LastLoginAt = DateTime.UtcNow;
+
+            // Generar refresh token
+            var refreshToken = Guid.NewGuid().ToString();
+            user.RefreshToken = refreshToken;
+            user.RefreshTokenExpiryTime = DateTime.UtcNow.AddDays(7);
+
             await _userRepository.UpdateAsync(user);
 
-            var token = GenerateJwtToken(user);
+            // Generar token JWT
+            var jwt = GenerateJwtToken(user);
 
-            return token;
+            return new LoginResponseDto
+            {
+                Token = jwt.Token,
+                ExpiresAt = jwt.ExpiresAt,
+                RefreshToken = refreshToken
+            };
         }
 
         private LoginResponseDto GenerateJwtToken(User user)
@@ -99,7 +116,6 @@ namespace AuthenticationSystem.Application.Services
                 signingCredentials: creds
             );
 
-
             return new LoginResponseDto
             {
                 Token = new JwtSecurityTokenHandler().WriteToken(token),
@@ -115,7 +131,7 @@ namespace AuthenticationSystem.Application.Services
                 user.RefreshToken != dto.RefreshToken ||
                 user.RefreshTokenExpiryTime <= DateTime.UtcNow)
             {
-                throw new Exception("Invalid tokens or expired");
+                throw new Exception("Invalid token or expired");
             }
 
             var newAccessToken = GenerateJwtToken(user);
@@ -134,6 +150,22 @@ namespace AuthenticationSystem.Application.Services
             };
         }
 
+        public async Task LogoutAsync(string token)
+        {
+            if (string.IsNullOrEmpty(token))
+                throw new Exception("Token no proporcionado.");
+
+            var handler = new JwtSecurityTokenHandler();
+            if (!handler.CanReadToken(token))
+                throw new Exception("Token inválido.");
+            var jwt = handler.ReadJwtToken(token);
+            var expiration = jwt.ValidTo;
+
+            if (expiration <= DateTime.UtcNow)
+                throw new Exception("El token ya expiró");
+
+            await _blacklistRepository.AddToBlacklistAsync(token, expiration);
+        }
 
     }
 }

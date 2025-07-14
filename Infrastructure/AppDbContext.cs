@@ -19,6 +19,7 @@ namespace Infrastructure
         public DbSet<User> Users => Set<User>();
         public DbSet<LoginAttempt> LoginAttempts => Set<LoginAttempt>();
 
+        public DbSet<BlackListToken> BlacklistedTokens => Set<BlackListToken>();
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<User>(entity =>
@@ -36,6 +37,13 @@ namespace Infrastructure
                 entity.HasKey(e => e.Id);
                 entity.Property(e => e.IsSuccess).IsRequired();
                 entity.Property(e => e.AttemptedAt).IsRequired();
+            });
+
+            modelBuilder.Entity<BlackListToken>(entity =>
+            {
+                entity.HasKey(e => e.Id);
+                entity.Property(e => e.Token).IsRequired();
+                entity.Property(e => e.ExpirationDate).IsRequired();
             });
         }
     }

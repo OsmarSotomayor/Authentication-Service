@@ -1,5 +1,6 @@
 ﻿using AuthenticationSystem.Application.Dtos;
 using AuthenticationSystem.Application.Interfaces;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace AuthenticationSystem.Controllers
@@ -70,6 +71,26 @@ namespace AuthenticationSystem.Controllers
             catch (Exception ex)
             {
                 return Unauthorized(new { error = ex.Message });
+            }
+        }
+
+        /// <summary>
+        /// Logout of user
+        /// </summary>
+        /// <returns></returns>
+        [Authorize]
+        [HttpPost("logout")]
+        public async Task<IActionResult> Logout()
+        {
+            try
+            {
+                var token = HttpContext.Request.Headers["Authorization"].FirstOrDefault()?.Split(" ").Last();
+                await _authService.LogoutAsync(token!);
+                return Ok(new { message = "Token invalidado correctamente." });
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new { error = ex.Message });
             }
         }
     }

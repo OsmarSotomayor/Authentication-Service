@@ -37,9 +37,7 @@ namespace Infrastructure.Repositories
 
         public async Task<User> GetByUsernameAsync(string username, bool track)
         {
-            return await _context.Users
-           .Include(u => u.LoginAttempts)
-           .FirstOrDefaultAsync(u => u.Username == username);
+            return await this.FindByCondition(usr => usr.Username == username, track).FirstOrDefaultAsync();
         }
     }
 }

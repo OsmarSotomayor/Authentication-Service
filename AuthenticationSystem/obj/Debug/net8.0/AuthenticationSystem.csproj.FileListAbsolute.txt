@@ -179,3 +179,4 @@ C:\Users\Oscar Omar\source\repos\AuthenticationSystem\AuthenticationSystem\bin\D
 C:\Users\Oscar Omar\source\repos\AuthenticationSystem\AuthenticationSystem\bin\Debug\net8.0\Microsoft.Extensions.Identity.Core.dll
 C:\Users\Oscar Omar\source\repos\AuthenticationSystem\AuthenticationSystem\bin\Debug\net8.0\AuthenticationSystem.Application.dll
 C:\Users\Oscar Omar\source\repos\AuthenticationSystem\AuthenticationSystem\bin\Debug\net8.0\AuthenticationSystem.Application.pdb
+C:\Users\Oscar Omar\source\repos\AuthenticationSystem\AuthenticationSystem\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll

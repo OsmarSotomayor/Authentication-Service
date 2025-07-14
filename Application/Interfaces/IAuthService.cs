@@ -24,5 +24,8 @@ namespace AuthenticationSystem.Application.Interfaces
         Task<LoginResponseDto> LoginAsync(LoginRequestDto dto);
 
         Task<LoginResponseDto> RefreshTokenAsync(RefreshTokenRequestDto dto);
+
+        Task LogoutAsync(string token);
+
     }
 }
